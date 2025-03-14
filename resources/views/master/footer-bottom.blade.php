@@ -23,7 +23,7 @@
           </div> --}}
           <div class="col-md-4 col-sm-6">
             <div class="copyright" x-data>
-              <p>© Copyright <span x-text="new Date().getFullYear()"></span> ZE-store. Design by ZE</a>
+              <p>© Copyright <span x-text="new Date().getFullYear()"></span> EZD-store. Design by EZD</a>
               </p>
             </div>
           </div>
