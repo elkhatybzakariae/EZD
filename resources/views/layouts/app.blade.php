@@ -31,7 +31,118 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
     tabindex="0">
-    @include('master.header')
+    {{-- @include('master.header') --}}
+    <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
+        <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    {{-- <img src="{{ asset('storage/images/main-logo.png') }}') }}" class="logo"> --}}
+                </a>
+                <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <svg class="navbar-icon">
+                        <use xlink:href="#navbar-icon"></use>
+                    </svg>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar"
+                    aria-labelledby="bdNavbarOffcanvasLabel">
+                    <div class="offcanvas-header px-4 pb-0">
+                        <a class="navbar-brand" href="index.html">
+                            {{-- <img src="{{ asset('storage/images/main-logo.png') }}') }}" class="logo"> --}}
+                        </a>
+                        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                            aria-label="Close" data-bs-target="#bdNavbar"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul id="navbar"
+                            class="navbar-nav text-uppercase justify-content-end align-items-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link me-4 active" href="{{ route('landing') }}">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-4" href="#company-services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-4" href="#mobile-products">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-4" href="#smart-watches">Watches</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-4" href="#yearly-sale">Sale</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link me-4" href="#latest-blog">Blog</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown"
+                                    href="#" role="button" aria-expanded="false">Pages</a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="{{ route('about') }}" class="dropdown-item">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="blog.html" class="dropdown-item">Blog</a>
+                                    </li>
+                                    <li>
+                                        <a href="shop.html" class="dropdown-item">Shop</a>
+                                    </li>
+                                    <li>
+                                        <a href="cart.html" class="dropdown-item">Cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="checkout.html" class="dropdown-item">Checkout</a>
+                                    </li>
+                                    <li>
+                                        <a href="single-post.html" class="dropdown-item">Single Post</a>
+                                    </li>
+                                    <li>
+                                        <a href="single-product.html" class="dropdown-item">Single Product</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html" class="dropdown-item">Contact</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <div class="user-items ps-5">
+                                    <ul class="d-flex justify-content-end list-unstyled">
+                                        <li class="search-item pe-3">
+                                            <a href="#" class="search-button">
+                                                <svg class="search">
+                                                    <use xlink:href="#search"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="pe-3">
+                                            <a href="#">
+                                                <svg class="user">
+                                                    <use xlink:href="#user"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="cart.html">
+                                                <svg class="cart">
+                                                    <use xlink:href="#cart"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        {{-- <li>
+    
+                                            <button id="theme-toggle">Toggle Dark Mode</button>
+                                        </li> --}}
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
     <br>
     <div class="container mt-5">
         {{-- @yield('content') --}}
@@ -58,7 +169,7 @@
                                                     class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_three vc_sep_pos_align_center vc_sep_color_grey wpb_content_element vc_separator-has-text">
                                                     <span class="vc_sep_holder vc_sep_holder_l"><span
                                                             class="vc_sep_line"></span></span>
-                                                    <h4>We change everything WordPress. One WP theme at a time.</h4>
+                                                    <h4>My Portfolio – A Showcase of My Work and Skills.</h4>
                                                     <span class="vc_sep_holder vc_sep_holder_r"><span
                                                             class="vc_sep_line"></span></span>
                                                 </div>
@@ -70,27 +181,14 @@
                                     <div class="wpb_column vc_column_container vc_col-sm-12">
                                         <div class="vc_column-inner">
                                             <div class="wpb_wrapper">
-                                                <div class="wpb_text_column wpb_content_element">
+                                                <div class="wpb_text_column wpb_content_element ms-3">
                                                     <div class="wpb_wrapper">
-                                                        <p>Please have a look at our <a
-                                                                href="https://colorlib.com/wp/free-wordpress-themes/">free
-                                                                WordPress themes</a>. We have ensured that these
-                                                            responsive themes are highly customizable and have a premium
-                                                            look and feel.</p>
-                                                        <p>These themes are not just to be showcased, you can also
-                                                            download them and use them for your free and commercial
-                                                            websites. &nbsp;We don’t charge for these themes, but we
-                                                            would appreciate it if you would link us to our website.
-                                                            This is not asking a lot, and we are sure you will be OK
-                                                            with our request.</p>
-                                                        <p>If you get stuck with setup and customization, we are here to
-                                                            help and try to answer every question on our support forum.
-                                                            Please leave a note on the forum for any special requests,
-                                                            and we’ll respond&nbsp;ASAP.&nbsp;This section will be
-                                                            updated as more themes become&nbsp;available.</p>
-                                                        <p>Pick a responsive WordPress theme for your website and take
-                                                            it to the next level.</p>
-                                                        <p><strong>Page last updated:</strong> July 2025</p>
+                                                        <p>This website is my personal portfolio, designed to showcase
+                                                            my work, skills, and professional experience.</p>
+                                                        <p>It serves as a central hub where visitors can explore my
+                                                            projects, learn about my expertise. </p>
+                                                        <p>The site is built with a clean and user-friendly design to
+                                                            ensure easy navigation and an engaging experience.</p>
 
                                                     </div>
                                                 </div>
@@ -98,27 +196,28 @@
                                         </div>
                                     </div>
                                 </div>
-
+                            </div>
+                            <div class="wpb-content-wrapper">
 
                                 <div class="vc_row wpb_row vc_row-fluid wpex-relative"
                                     style="margin-top: 30px;margin-bottom: 50px;">
+                                    @foreach ($projects as $item)
+                                        
                                     <div class="wpb_column vc_column_container vc_col-sm-4">
                                         <div class="vc_column-inner">
                                             <div class="wpb_wrapper">
                                                 <div
                                                     class="wpb_single_image wpb_content_element vc_align_ wpb_content_element">
-                                                    <h2 class="wpb_heading wpb_singleimage_heading">Shapely - One Page
-                                                        WP Theme</h2>
+                                                    <h2 class="wpb_heading wpb_singleimage_heading">{{ $item->title}}</h2>
                                                     <figure class="wpb_wrapper vc_figure">
-                                                        <a href="https://colorlib.com/wp/themes/shapely/" target="_self"
+                                                        <a href="#" target="_self"
                                                             class="vc_single_image-wrapper wpex-image-hover grow   vc_box_border_grey">
-                                                            <picture class="vc_single_image-img attachment-full"
+                                                            <picture class="vc_single_image-img"
                                                                 title="flexible-wordpress-theme">
                                                                 <source type="image/webp"
-                                                                    srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/flexible-wordpress-theme.jpg.webp">
-                                                                <img width="1200" height="900"
-                                                                    src="https://colorlib.com/wp/wp-content/uploads/sites/2/flexible-wordpress-theme.jpg"
-                                                                    alt="">
+                                                                    srcset="{{asset('storage/'. $item->pic)}}">
+                                                                    <img src="{{ asset('storage/' . $item->pic) }}" alt="">
+
                                                             </picture>
                                                         </a>
                                                     </figure>
@@ -126,7 +225,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="wpb_column vc_column_container vc_col-sm-4">
+                                    @endforeach
+
+
+
+
+                                    {{-- <div class="wpb_column vc_column_container vc_col-sm-4">
                                         <div class="vc_column-inner">
                                             <div class="wpb_wrapper">
                                                 <div
@@ -179,9 +283,21 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
-                                <div class="vc_row wpb_row vc_row-fluid wpex-relative"
+
+
+
+
+
+
+
+
+
+
+
+
+                                {{-- <div class="vc_row wpb_row vc_row-fluid wpex-relative"
                                     style="margin-top: 30px;margin-bottom: 50px;">
                                     <div class="wpb_column vc_column_container vc_col-sm-4">
                                         <div class="vc_column-inner">
@@ -198,13 +314,13 @@
                                                                 <source type="image/webp"
                                                                     data-lazy-srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/activello-browser.jpg.webp"
                                                                     srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/activello-browser.jpg.webp">
-                                                                <img width="1200" height="900"
+                                                                <img 
+                                                                
                                                                     src="https://colorlib.com/wp/wp-content/uploads/sites/2/activello-browser.jpg"
                                                                     alt=""
                                                                     data-lazy-src="https://colorlib.com/wp/wp-content/uploads/sites/2/activello-browser.jpg"
                                                                     data-ll-status="loaded"
                                                                     class="entered lazyloaded"><noscript><img
-                                                                        width="1200" height="900"
                                                                         src="https://colorlib.com/wp/wp-content/uploads/sites/2/activello-browser.jpg"
                                                                         alt="" /></noscript>
                                                             </picture>
@@ -230,13 +346,13 @@
                                                                 <source type="image/webp"
                                                                     data-lazy-srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/activello-simple-blog-theme.jpg.webp"
                                                                     srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/activello-simple-blog-theme.jpg.webp">
-                                                                <img width="1200" height="900"
+                                                                <img 
                                                                     src="https://colorlib.com/wp/wp-content/uploads/sites/2/activello-simple-blog-theme.jpg"
                                                                     alt=""
                                                                     data-lazy-src="https://colorlib.com/wp/wp-content/uploads/sites/2/activello-simple-blog-theme.jpg"
                                                                     data-ll-status="loaded"
                                                                     class="entered lazyloaded"><noscript><img
-                                                                        width="1200" height="900"
+                                                                        
                                                                         src="https://colorlib.com/wp/wp-content/uploads/sites/2/activello-simple-blog-theme.jpg"
                                                                         alt="" /></noscript>
                                                             </picture>
@@ -262,13 +378,13 @@
                                                                 <source type="image/webp"
                                                                     data-lazy-srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/pixova-multipurpose-theme.jpg.webp"
                                                                     srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/pixova-multipurpose-theme.jpg.webp">
-                                                                <img width="1200" height="900"
+                                                                <img 
                                                                     src="https://colorlib.com/wp/wp-content/uploads/sites/2/pixova-multipurpose-theme.jpg"
                                                                     alt=""
                                                                     data-lazy-src="https://colorlib.com/wp/wp-content/uploads/sites/2/pixova-multipurpose-theme.jpg"
                                                                     data-ll-status="loaded"
                                                                     class="entered lazyloaded"><noscript><img
-                                                                        width="1200" height="900"
+                                                                        
                                                                         src="https://colorlib.com/wp/wp-content/uploads/sites/2/pixova-multipurpose-theme.jpg"
                                                                         alt="" /></noscript>
                                                             </picture>
@@ -297,13 +413,13 @@
                                                                 <source type="image/webp"
                                                                     data-lazy-srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/blaskan-preview.jpg.webp"
                                                                     srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/blaskan-preview.jpg.webp">
-                                                                <img width="1200" height="900"
+                                                                <img 
                                                                     src="https://colorlib.com/wp/wp-content/uploads/sites/2/blaskan-preview.jpg"
                                                                     alt=""
                                                                     data-lazy-src="https://colorlib.com/wp/wp-content/uploads/sites/2/blaskan-preview.jpg"
                                                                     data-ll-status="loaded"
                                                                     class="entered lazyloaded"><noscript><img
-                                                                        width="1200" height="900"
+                                                                        
                                                                         src="https://colorlib.com/wp/wp-content/uploads/sites/2/blaskan-preview.jpg"
                                                                         alt="" /></noscript>
                                                             </picture>
@@ -360,13 +476,13 @@
                                                                 <source type="image/webp"
                                                                     data-lazy-srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/tyche-browser.jpg.webp"
                                                                     srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/tyche-browser.jpg.webp">
-                                                                <img width="1200" height="900"
+                                                                <img 
                                                                     src="https://colorlib.com/wp/wp-content/uploads/sites/2/tyche-browser.jpg"
                                                                     alt=""
                                                                     data-lazy-src="https://colorlib.com/wp/wp-content/uploads/sites/2/tyche-browser.jpg"
                                                                     data-ll-status="loaded"
                                                                     class="entered lazyloaded"><noscript><img
-                                                                        width="1200" height="900"
+                                                                        
                                                                         src="https://colorlib.com/wp/wp-content/uploads/sites/2/tyche-browser.jpg"
                                                                         alt="" /></noscript>
                                                             </picture>
@@ -395,13 +511,13 @@
                                                                 <source type="image/webp"
                                                                     data-lazy-srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/newspaperx-browserpsd.jpg.webp"
                                                                     srcset="https://colorlib.com/wp/wp-content/uploads/sites/2/newspaperx-browserpsd.jpg.webp">
-                                                                <img width="1200" height="900"
+                                                                <img 
                                                                     src="https://colorlib.com/wp/wp-content/uploads/sites/2/newspaperx-browserpsd.jpg"
                                                                     alt=""
                                                                     data-lazy-src="https://colorlib.com/wp/wp-content/uploads/sites/2/newspaperx-browserpsd.jpg"
                                                                     data-ll-status="loaded"
                                                                     class="entered lazyloaded"><noscript><img
-                                                                        width="1200" height="900"
+                                                                        
                                                                         src="https://colorlib.com/wp/wp-content/uploads/sites/2/newspaperx-browserpsd.jpg"
                                                                         alt="" /></noscript>
                                                             </picture>
@@ -411,10 +527,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-
+                                </div> --}}
                             </div>
+
+
+
                             <div class="vc_row wpb_row vc_row-fluid wpex-relative">
                                 <div class="wpb_column vc_column_container vc_col-sm-12">
                                     <div class="vc_column-inner">
@@ -433,8 +550,6 @@
                                 </div>
                             </div>
                         </div>
-                </div>
-
                 </article>
 
 

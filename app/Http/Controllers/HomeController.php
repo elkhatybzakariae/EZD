@@ -17,6 +17,7 @@ class HomeController extends Controller
         //     ['text' => 'Villes', 'url' => null], // You can set the URL to null for the last breadcrumb
         // ];
         $projects = Project::all();
+        // dd($projects);
         return view('layouts.app', compact('projects'));
     }
     public function about()
