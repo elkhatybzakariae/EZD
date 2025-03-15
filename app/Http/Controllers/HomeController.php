@@ -18,7 +18,17 @@ class HomeController extends Controller
         // ];
         $projects = Project::all();
         // dd($projects);
-        return view('layouts.app', compact('projects'));
+        return view('pages.allpr', compact('projects'));
+    }
+    public function project($id)
+    {
+        // $breads = [
+        //     ['title' => 'Liste des Villes', 'url' => null],
+        //     ['text' => 'Villes', 'url' => null], // You can set the URL to null for the last breadcrumb
+        // ];
+        $project = Project::findorfail($id);
+        // dd($projects);
+        return view('pages.project', compact('project'));
     }
     public function about()
     {
