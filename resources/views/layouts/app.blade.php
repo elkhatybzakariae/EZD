@@ -64,46 +64,10 @@
                                 <a class="nav-link me-4" href="#company-services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-4" href="#mobile-products">Products</a>
+                                <a class="nav-link me-4" href="#mobile-products">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-4" href="#smart-watches">Watches</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link me-4" href="#yearly-sale">Sale</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link me-4" href="#latest-blog">Blog</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link me-4 dropdown-toggle link-dark" data-bs-toggle="dropdown"
-                                    href="#" role="button" aria-expanded="false">Pages</a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="{{ route('about') }}" class="dropdown-item">About</a>
-                                    </li>
-                                    <li>
-                                        <a href="blog.html" class="dropdown-item">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="shop.html" class="dropdown-item">Shop</a>
-                                    </li>
-                                    <li>
-                                        <a href="cart.html" class="dropdown-item">Cart</a>
-                                    </li>
-                                    <li>
-                                        <a href="checkout.html" class="dropdown-item">Checkout</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-post.html" class="dropdown-item">Single Post</a>
-                                    </li>
-                                    <li>
-                                        <a href="single-product.html" class="dropdown-item">Single Product</a>
-                                    </li>
-                                    <li>
-                                        <a href="contact.html" class="dropdown-item">Contact</a>
-                                    </li>
-                                </ul>
+                                <a class="nav-link me-4" href="#latest-blog">About me</a>
                             </li>
                             <li class="nav-item">
                                 <div class="user-items ps-5">
@@ -129,10 +93,9 @@
                                                 </svg>
                                             </a>
                                         </li>
-                                        {{-- <li>
-    
-                                            <button id="theme-toggle">Toggle Dark Mode</button>
-                                        </li> --}}
+                                        <li>
+                                            
+                                        </li>
                                     </ul>
                                 </div>
                             </li>
@@ -162,26 +125,7 @@
     <script type="text/javascript" src="{{ asset('storage/js/bootstrap.bundle.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('storage/js/plugins.js') }}"></script>
     <script type="text/javascript" src="{{ asset('storage/js/script.js') }}"></script>
-    <script>
-        const toggleTheme = () => {
-            const body = document.body;
-            if (body.classList.contains('dark-mode')) {
-                body.classList.remove('dark-mode');
-                localStorage.setItem('theme', 'light');
-            } else {
-                body.classList.add('dark-mode');
-                localStorage.setItem('theme', 'dark');
-            }
-        };
-
-        // Apply saved theme on page load
-        const savedTheme = localStorage.getItem('theme') || 'light';
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-mode');
-        }
-
-        document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
-    </script>
+    
     @livewireScripts
 
     @yield('script')

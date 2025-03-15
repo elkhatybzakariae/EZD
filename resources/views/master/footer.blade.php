@@ -6,9 +6,9 @@
             <div class="col-lg-12 col-sm-12 pb-3">
               <div class="footer-menu contact-item">
                 <h5 class="widget-title text-uppercase pb-2">Contact Us</h5>
-                <p>Do you have any queries or suggestions? <a href="mailto:">EZD-store@gmail.com</a>
+                <p>Do you have any queries or suggestions? <a href="mailto:">EL-KHATYB.ZAKARIAE@ofppt-edu.ma</a>
                 </p>
-                <p>If you need support? Just give us a call. <a href="">+212 60000 0000</a>
+                <p>If you need support? Just give us a call. <a href="">+212 642586212</a>
                 </p>
               </div>
             </div>
