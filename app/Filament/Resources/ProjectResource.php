@@ -38,6 +38,7 @@ class ProjectResource extends Resource
                 Tabs::make('Create New Project')->tabs([
                     Tab::make('Project Information')->schema([
                         TextInput::make('title')->label('Project Title')->required(),
+                        TextInput::make('link')->label('Link')->required(),
                         Textarea::make('description')
                             ->label('Description')
                             ->columnSpanFull()
@@ -58,6 +59,7 @@ class ProjectResource extends Resource
             ->columns([
                 ImageColumn::make('pic')->disk('public'),
                 TextColumn::make('title')->label('Project')->sortable()->searchable(),
+                TextColumn::make('link')->label('Link')->sortable()->searchable(),
                 TextColumn::make('description')->label('Description')->sortable()->searchable()->toggleable(),
             ])->filters([
                 // 

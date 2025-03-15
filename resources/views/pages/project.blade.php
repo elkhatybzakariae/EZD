@@ -37,12 +37,13 @@
                                                     </picture>
                                                 </a>
                                             </figure>
-                                            <div class="d-flex justify-content-center">
-                                                <a class="btn text-white" data-mdb-ripple-init style="background-color: #ffac44;" href="#!" role="button">
+                                            <div class="d-flex justify-content-center mt-5">
+                                                <a class="btn text-white" data-mdb-ripple-init style="background-color: #ffac44;" href="{{ $project->link }}" target="_blank" role="button">
                                                     Demo
                                                 </a>
+                                                
                                             </div>
-                                            <p>
+                                            <p class="mt-5">
                                                 {{ $project->description}}
                                             </p>
                                         </div>

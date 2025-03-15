@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('pic')->require();
             $table->string('title');
             $table->string('description');
+            $table->string('link');
             $table->timestamps();
         });
     }
