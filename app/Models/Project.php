@@ -13,7 +13,7 @@ class Project extends Model
     protected $primaryKey = 'id_Pr';
     public $incrementing = false;
     public $timestamps = true;
-    protected $fillable = ['id_Pr','pic','title','description','link'];
+    protected $fillable = ['id_Pr','pic','title','description','link','email','password'];
 
     protected static function boot()
     {
