@@ -33,10 +33,10 @@
     tabindex="0">
     {{-- @include('master.header') --}}
     <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
-        <nav id="header-nav" class="navbar navbar-expand-lg px-3 mb-3">
+        <nav id="header-nav" class="navbar navbar-expand-lg px-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
-                    {{-- <img src="{{ asset('storage/images/main-logo.png') }}') }}" class="logo"> --}}
+                    <img src="{{ asset('storage/ezd.png') }}" class="logo" height="35 px" width="35 x">
                 </a>
                 <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#bdNavbar" aria-controls="bdNavbar" aria-expanded="false"
@@ -49,7 +49,7 @@
                     aria-labelledby="bdNavbarOffcanvasLabel">
                     <div class="offcanvas-header px-4 pb-0">
                         <a class="navbar-brand" href="index.html">
-                            {{-- <img src="{{ asset('storage/images/main-logo.png') }}') }}" class="logo"> --}}
+                            <img src="{{ asset('storage/ezd.png') }}" class="logo" height="35 px" width="35 x">
                         </a>
                         <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
                             aria-label="Close" data-bs-target="#bdNavbar"></button>
@@ -64,10 +64,10 @@
                                 <a class="nav-link me-4" href="#company-services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-4" href="#mobile-products">Projects</a>
+                                <a class="nav-link me-4" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-4" href="#latest-blog">About me</a>
+                                <a class="nav-link me-4" href="{{route('about')}}">About me</a>
                             </li>
                             <li class="nav-item">
                                 <div class="user-items ps-5">
@@ -94,7 +94,7 @@
                                             </a>
                                         </li>
                                         <li>
-                                            
+
                                         </li>
                                     </ul>
                                 </div>
@@ -108,13 +108,9 @@
 
     <br>
     <div class="container mt-5">
-        @yield('content')
-
-
-
-
-    </div>
-
+        <div id="projects">
+            @yield('content')
+        </div>
     </div>
 
 
@@ -125,7 +121,7 @@
     <script type="text/javascript" src="{{ asset('storage/js/bootstrap.bundle.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('storage/js/plugins.js') }}"></script>
     <script type="text/javascript" src="{{ asset('storage/js/script.js') }}"></script>
-    
+
     @livewireScripts
 
     @yield('script')

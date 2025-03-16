@@ -1,13 +1,13 @@
 @extends('layouts.app')
 @section('content')
 
-<div id="content-wrap" class="container wpex-clr">
+<div id="content-wrap" class="container wpex-clr" >
 
 
     <div id="primary" class="content-area wpex-clr">
 
 
-        <div id="content" class="site-content wpex-clr">
+        <div id="content" class="site-content wpex-clr" >
 
 
 

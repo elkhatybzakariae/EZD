@@ -36,6 +36,6 @@ class HomeController extends Controller
         //     ['title' => 'Liste des Villes', 'url' => null],
         //     ['text' => 'Villes', 'url' => null], // You can set the URL to null for the last breadcrumb
         // ];
-        return view('about');
+        return view('pages.about');
     }
 }
