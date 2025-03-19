@@ -61,9 +61,6 @@
                                 <a class="nav-link me-4 active" href="{{ route('landing') }}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link me-4" href="#company-services">Services</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link me-4" href="#projects">Projects</a>
                             </li>
                             <li class="nav-item">

@@ -82,26 +82,6 @@
                             @endforeach
                         </div>
                     </div>
-
-
-
-                    {{-- <div class="vc_row wpb_row vc_row-fluid wpex-relative">
-                        <div class="wpb_column vc_column_container vc_col-sm-12">
-                            <div class="vc_column-inner">
-                                <div class="wpb_wrapper">
-                                    <div class="wpb_text_column wpb_content_element">
-                                        <div class="wpb_wrapper">
-                                            <p>Couldn’t find the theme you were looking for? We have
-                                                thousands more that <a
-                                                    href="https://colorlib.com/wp/popular-wordpress-themes/">you
-                                                    can find here</a>.</p>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
                 </div>
         </article>
 

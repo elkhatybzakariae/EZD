@@ -73,17 +73,11 @@ class ProjectResource extends Resource
                 Tables\Actions\DeleteAction::make(),
             ])
             ->headerActions([
-                // ExportAction::make()
-                //     ->exporter(ProductExporter::class)
-                //     ->formats([
-                //         ExportFormat::Csv
-                //     ])
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
-                // ExportBulkAction::make()->exporter(ProductExporter::class)
             ]);
     }
 
