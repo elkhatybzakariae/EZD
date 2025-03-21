@@ -64,10 +64,6 @@
                                             </svg>
                                         </a>
                                     </li>
-                                    {{-- <li>
-
-                                        <button id="theme-toggle">Toggle Dark Mode</button>
-                                    </li> --}}
                                 </ul>
                             </div>
                         </li>
