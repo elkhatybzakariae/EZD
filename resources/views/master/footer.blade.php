@@ -1,7 +1,5 @@
   <footer class="text-center">
-    <!-- Grid container -->
     <div class="container p-4 pb-0">
-      <!-- Section: CTA -->
       <section class="">
         <p class="d-flex justify-content-center align-items-center">
           <h5 class="widget-title text-uppercase pb-2">Contact Us</h5>
@@ -11,11 +9,8 @@
                 </p>
         </p>
       </section>
-      <!-- Section: CTA -->
     </div>
     <hr>
-    <!-- Grid container -->
-
     <!-- Copyright -->
     {{-- <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2020 Copyright:

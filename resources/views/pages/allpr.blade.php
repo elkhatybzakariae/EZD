@@ -2,15 +2,8 @@
 @section('content')
 
 <div id="content-wrap" class="container wpex-clr" >
-
-
     <div id="primary" class="content-area wpex-clr">
-
-
         <div id="content" class="site-content wpex-clr" >
-
-
-
             <article id="single-blocks" class="single-page-article wpex-clr">
                 <div class="single-page-content single-content entry wpex-clr">
                     <div class="wpb-content-wrapper">
@@ -51,11 +44,9 @@
                         </div>
                     </div>
                     <div class="wpb-content-wrapper">
-
                         <div class="vc_row wpb_row vc_row-fluid wpex-relative"
                             style="margin-top: 30px;margin-bottom: 50px;">
-                            @foreach ($projects as $item)
-                                
+                            @foreach ($projects as $item)                                
                             <div class="wpb_column vc_column_container vc_col-sm-4">
                                 <div class="vc_column-inner">
                                     <div class="wpb_wrapper">
@@ -70,8 +61,6 @@
                                                         <source type="image/webp"
                                                             srcset="{{asset('storage/'. $item->pic)}}">
                                                             <img src="{{ asset('storage/' . $item->pic) }}" alt="" class="img-fluid" style="width: 100%; height: auto;">
-
-
                                                     </picture>
                                                 </a>
                                             </figure>
@@ -84,10 +73,6 @@
                     </div>
                 </div>
         </article>
-
-
     </div>
-
-
 </div>
 @endsection
