@@ -32,7 +32,7 @@
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
     tabindex="0">
     {{-- @include('master.header') --}}
-    {{-- <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
+    <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
         <nav id="header-nav" class="navbar navbar-expand-lg px-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -101,7 +101,7 @@
                 </div>
             </div>
         </nav>
-    </header> --}}
+    </header>
 
     <br>
     <div class="container mt-5">

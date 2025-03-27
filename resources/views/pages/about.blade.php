@@ -22,7 +22,7 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true"
     tabindex="0">
-    {{-- <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
+    <header id="header" class="site-header header-scrolled position-fixed text-black bg-light">
         <nav id="header-nav" class="navbar navbar-expand-lg px-3">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">
@@ -94,7 +94,7 @@
                 </div>
             </div>
         </nav>
-    </header> --}}
+    </header>
     
     <section id="about" class="py-16 bg-gray-100">
         <div class="container mx-auto px-4">
